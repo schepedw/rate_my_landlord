@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.1.3'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
+gem 'devise', '>= 4.3'
+gem 'rolify', '>= 5.1'
 
 group :development, :test do
   gem 'pry'
