@@ -1,17 +1,36 @@
 {
-  "name": "client",
+  "name": "rate_my_landlord",
   "version": "0.1.0",
-  "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-scripts": "1.0.11"
+    "babel-core": "^6.26.0",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-scripts": "^1.0.11"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test:ui": "jest --config ./spec/support/configuration/ui.json",
+    "test:storyshots": "jest --config ./spec/support/configuration/storyshots.json",
+    "test": "npm run test:ui && npm run test:storyshots",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public -c .storybook"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.15",
+    "@storybook/addon-links": "^3.2.15",
+    "@storybook/addon-storyshots": "^3.2.16",
+    "@storybook/addons": "^3.2.16",
+    "@storybook/channels": "^3.2.16",
+    "@storybook/react": "^3.2.17",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-15": "^1.0.5",
+    "enzyme-to-json": "^3.2.2",
+    "react-test-renderer": "^15.6.2"
   }
 }
