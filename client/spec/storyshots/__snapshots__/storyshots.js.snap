@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button with some emoji 1`] = `
+<button
+  className="defaultButton normalSizeButton"
+  type="button"
+>
+  <span
+    className="defaultButton__content"
+  >
+    😀 😎 👍 💯
+  </span>
+</button>
+`;
+
+exports[`Storyshots Button with text 1`] = `
+<button
+  className="defaultButton normalSizeButton"
+  onClick={[Function]}
+  type="button"
+>
+  <span
+    className="defaultButton__content"
+  >
+    Hello Button
+  </span>
+</button>
+`;

@@ -7,12 +7,12 @@
     "./src/",
     "./node_modules/@aftonbladet"
   ],
-  "rootDir": "../../../",
+  "rootDir": "../../",
   "roots": [ "./src/" ],
   "setupFiles": [
     "<rootDir>/spec/support/context.js",
     "<rootDir>/spec/support/mockSetup.js",
-    "<rootDir>/spec/support/jestSetup.js"
+    "<rootDir>/spec/support/enzymeSetup.js"
   ],
   "testRegex": "App.test.js$"
 }

@@ -4,11 +4,9 @@ directories:
   - "client/node_modules"
 
 before_install:
-  - npm i -g npm@5.2.0
+  - cd client/
+  #- npm i -g npm@5.2.0
 
 before_script:
-  - cd client/
   - npm -v
-  - npm install
-  - npm list
-  - npm run test:ui
+  #- npm install

@@ -30,7 +30,6 @@ const fetchHelper = ({ url, method, data, processData, contentType, formData, sk
   }
 
   return fetch(url, params).then((response) => {
-    checkForErrors(response);
     return response.json();
   });
 };
