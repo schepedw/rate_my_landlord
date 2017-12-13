@@ -1,0 +1,18 @@
+{
+  "moduleNameMapper": {
+    "^.+\\.(scss|less|svg)$": "identity-obj-proxy"
+  },
+  "modulePaths": [
+    "./src/components/",
+    "./src/",
+    "./node_modules/@aftonbladet"
+  ],
+  "rootDir": "../../",
+  "roots": [ "./src/" ],
+  "setupFiles": [
+    "<rootDir>/spec/support/context.js",
+    "<rootDir>/spec/support/mockSetup.js",
+    "<rootDir>/spec/support/enzymeSetup.js"
+  ],
+  "testRegex": ".*Spec.jsx?$"
+}
