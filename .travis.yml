@@ -5,8 +5,3 @@ directories:
 
 before_install:
   - cd client/
-  #- npm i -g npm@5.2.0
-
-before_script:
-  - npm -v
-  #- npm install

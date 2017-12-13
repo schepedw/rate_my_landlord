@@ -29,9 +29,7 @@ const fetchHelper = ({ url, method, data, processData, contentType, formData, sk
     params = Object.assign(params, bodyParam);
   }
 
-  return fetch(url, params).then((response) => {
-    return response.json();
-  });
+  return fetch(url, params).then(response => response.json());
 };
 
 export default fetchHelper;

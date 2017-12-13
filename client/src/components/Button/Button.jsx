@@ -18,7 +18,7 @@ const Button = ({
     type,
     className: `${buttonStyle}Button ${buttonSize}SizeButton`
   };
-  if (handleClick) { attrib.onClick = handleClick }
+  if (handleClick) { attrib.onClick = handleClick; }
   if (handleBlur) { attrib.onBlur = handleBlur; }
   if (width) { attrib.style = { width }; }
   if (active) { attrib.className += ' active'; }

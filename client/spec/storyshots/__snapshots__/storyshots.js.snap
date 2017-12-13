@@ -8,7 +8,12 @@ exports[`Storyshots Button with some emoji 1`] = `
   <span
     className="defaultButton__content"
   >
-    😀 😎 👍 💯
+    <span
+      aria-label="lol"
+      role="img"
+    >
+      😀 😎 👍 💯
+    </span>
   </span>
 </button>
 `;

@@ -14,5 +14,5 @@
     "<rootDir>/spec/support/mockSetup.js",
     "<rootDir>/spec/support/enzymeSetup.js"
   ],
-  "testRegex": "App.test.js$"
+  "testRegex": ".*Spec.jsx?$"
 }

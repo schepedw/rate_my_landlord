@@ -49,9 +49,13 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test:ui": "node scripts/test.js",
+    "lint": "eslint . --ext .js --ext .jsx",
+    "lint:fix": "eslint . --ext .js --ext .jsx --fix",
+    "test:ui": "jest --config ./config/jest/ui.json",
+    "test:ui:replace": "jest -u --config ./config/jest/ui.json",
     "test:storyshots": "jest --config ./config/jest/storyshots.json",
-    "test": "npm run test:ui && npm run test:storyshots",
+    "test:storyshots:replace": "jest -u --config ./config/jest/storyshots.json",
+    "test": "npm run lint && npm run test:ui && npm run test:storyshots",
     "storybook": "start-storybook -p 9009 -s public -c .storybook",
     "test:test": ""
   },
@@ -69,6 +73,7 @@
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-15": "^1.0.5",
     "enzyme-to-json": "^3.2.2",
+    "eslint-config-airbnb": "^15.1.0",
     "identity-obj-proxy": "^3.0.0",
     "react-test-renderer": "^15.6.2"
   },
